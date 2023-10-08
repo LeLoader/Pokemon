@@ -23,7 +23,7 @@ class Pokemon{
             console.log(`${this.name} attaque ${enemy.name}... et lui inflige ${damage} dégats! Il lui reste ${Math.max(enemy.hp,0)}HP`);
             }
         else{
-            console.log(`${this.name} attaque ${enemy.name}... mais rate son attaque.`)
+            console.log(`${this.name} attaque ${enemy.name}... mais rate son attaque.`);
         }
     }
 }
@@ -76,12 +76,12 @@ function Fight(pokemon1 = new Pokemon(), pokemon2 = new Pokemon()){ //Lance le c
     }
 
     if (pokemon1.hp <= 0){ //Pokemon 1 KO
-        console.log(`${pokemon2.name} gagne ce combat avec ${pokemon2.hp}HP!`)
+        console.log(`${pokemon2.name} gagne ce combat avec ${pokemon2.hp}HP!`);
     }
     else if(pokemon2.hp <= 0){ //Pokemon 2 KO
-        console.log(`${pokemon1.name} gagne ce combat avec ${pokemon1.hp}HP!`)
+        console.log(`${pokemon1.name} gagne ce combat avec ${pokemon1.hp}HP!`);
     }
     else{ //Si jamais pas assez de précision, le fight peut durer longtemps donc après 100 tours le fight se termine sur une égalité
-        console.log("Vos pokémons sont trop fatigués pour continuer à se battre, égalité!")
+        console.log("Vos pokémons sont trop fatigués pour continuer à se battre, égalité!");
     }
 }
